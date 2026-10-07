@@ -1,0 +1,19 @@
+# Eclipse
+.metadata/
+.project
+.classpath
+.settings/
+
+# Maven / Java build files
+target/
+bin/
+*.class
+
+# Images
+*.png
+
+# ZIP files
+zipfiles/
+
+# Environment / secrets
+.env
