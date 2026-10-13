@@ -1,0 +1,223 @@
+{
+  "info": {
+    "_postman_id": "dbc65753-c6e7-403f-9594-45d622389f2d",
+    "name": "Quize - Miocroservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36993500"
+  },
+  "item": [
+    {
+      "name": "Add Questions",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"What hook is used to manage state in a functional component?\",\r\n        \"option1\": \"useEffect\",\r\n        \"option2\": \"useContext\",\r\n        \"option3\": \"useState\",\r\n        \"option4\": \"useReducer\",\r\n        \"answer\": 3\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"What method is used to render a React component to the DOM?\",\r\n        \"option1\": \"React.render()\",\r\n        \"option2\": \"ReactDOM.render()\",\r\n        \"option3\": \"React.mount()\",\r\n        \"option4\": \"ReactDOM.mount()\",\r\n        \"answer\": 2\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"Which hook is used to perform side effects in a functional component?\",\r\n        \"option1\": \"useState\",\r\n        \"option2\": \"useRef\",\r\n        \"option3\": \"useMemo\",\r\n        \"option4\": \"useEffect\",\r\n        \"answer\": 4\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"What is the virtual DOM in React?\",\r\n        \"option1\": \"A direct copy of the browser DOM\",\r\n        \"option2\": \"A lightweight in-memory representation of the real DOM\",\r\n        \"option3\": \"A database for storing UI states\",\r\n        \"option4\": \"A browser extension for React\",\r\n        \"answer\": 2\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"Which of the following is used to pass data from parent to child component?\",\r\n        \"option1\": \"state\",\r\n        \"option2\": \"context\",\r\n        \"option3\": \"props\",\r\n        \"option4\": \"hooks\",\r\n        \"answer\": 3\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"What does the useCallback hook do?\",\r\n        \"option1\": \"Memoizes a computed value\",\r\n        \"option2\": \"Memoizes a function to avoid re-creation on every render\",\r\n        \"option3\": \"Fetches data from an API\",\r\n        \"option4\": \"Replaces useState for complex state\",\r\n        \"answer\": 2\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"Which hook gives access to a DOM element directly?\",\r\n        \"option1\": \"useContext\",\r\n        \"option2\": \"useState\",\r\n        \"option3\": \"useRef\",\r\n        \"option4\": \"useEffect\",\r\n        \"answer\": 3\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"What is the correct way to conditionally render a component in React?\",\r\n        \"option1\": \"Using if-else inside JSX directly\",\r\n        \"option2\": \"Using ternary operator or && in JSX\",\r\n        \"option3\": \"Using a switch statement inside return\",\r\n        \"option4\": \"Using render-if library only\",\r\n        \"answer\": 2\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"Which of the following is true about React keys?\",\r\n        \"option1\": \"Keys are used to style list items\",\r\n        \"option2\": \"Keys must be unique across the entire app\",\r\n        \"option3\": \"Keys help React identify which items in a list have changed\",\r\n        \"option4\": \"Keys are optional for list rendering\",\r\n        \"answer\": 3\r\n    },\r\n    {\r\n        \"category\": \"react\",\r\n        \"question\": \"What is the purpose of React.memo()?\",\r\n        \"option1\": \"To store API responses in memory\",\r\n        \"option2\": \"To prevent re-renders when props have not changed\",\r\n        \"option3\": \"To memoize the return value of a function\",\r\n        \"option4\": \"To manage global state\",\r\n        \"answer\": 2\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2517/questions/add",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "questions",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "All Questions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2517/questions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "questions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Questions By category",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2517/questions/react",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "questions",
+            "react"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Question",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2517/questions/41",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "questions",
+            "41"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Question",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":31,\r\n    \"category\": \"react\",\r\n    \"question\": \"What hook is used to manage state in a functional component?\",\r\n    \"option1\": \"useEffect\",\r\n    \"option2\": \"useContext\",\r\n    \"option3\": \"useState\",\r\n    \"option4\": \"useReducer\",\r\n    \"answer\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2517/questions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "questions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create Quize",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"category\":\"java\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2517/quiz",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "quiz"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Quiz By QuizId",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2517/quiz/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "quiz",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Quiz result",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    { \"questionId\": 4, \"answer\": 2 },\r\n    { \"questionId\": 6, \"answer\": 2 },\r\n    { \"questionId\": 3, \"answer\": 2 },\r\n    { \"questionId\": 8, \"answer\": 2 },\r\n    { \"questionId\": 5, \"answer\": 3 },\r\n    { \"questionId\": 7, \"answer\": 1 },\r\n    { \"questionId\": 1, \"answer\": 1 },\r\n    { \"questionId\": 2, \"answer\": 3 },\r\n    { \"questionId\": 9, \"answer\": 2 },\r\n    { \"questionId\": 10, \"answer\": 1 }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2517/quiz/result",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "quiz",
+            "result"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Quize by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:2517/quiz/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2517",
+          "path": [
+            "quiz",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
